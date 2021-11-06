@@ -2,7 +2,7 @@ package Lesson2;
 
 import static java.lang.Math.pow;
 
-    // Формула Эквивалентности массы и энергии E = mc²
+// Формула Эквивалентности массы и энергии E = mc²
 
 public class AnotherFormula {
     public static void main(String[] args) {
@@ -12,7 +12,9 @@ public class AnotherFormula {
         System.out.println(e);
 
 
-    }public static double greatFormula(double m, double c){
+    }
+
+    public static double greatFormula(double m, double c) {
         return m * pow(c, 2);
     }
 }
