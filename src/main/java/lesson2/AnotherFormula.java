@@ -1,4 +1,4 @@
-package Lesson2;
+package lesson2;
 
 import static java.lang.Math.pow;
 
