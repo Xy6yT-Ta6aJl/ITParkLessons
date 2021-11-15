@@ -3,7 +3,7 @@ package lesson3;
 import java.util.Scanner;
 
 public class QuadraticEquation {
-    public static double d;
+
 
 
     public static void main(String[] args) {
@@ -25,8 +25,8 @@ public class QuadraticEquation {
             double x = -b / (2 * a);
             System.out.println("Переменная x1 = x2 = " + x);
         } else {
-            double x1 = -b + Math.cbrt(d) / (2 * a);
-            double x2 = -b - Math.cbrt(d) / (2 * a);
+            double x1 = -b + Math.sqrt(d) / (2 * a);
+            double x2 = -b - Math.sqrt(d) / (2 * a);
             System.out.print("Переменная x1 = " + x1 + ", ");
             System.out.print("переменная x2 = " + x2);
         }
