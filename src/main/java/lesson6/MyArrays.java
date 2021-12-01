@@ -15,26 +15,39 @@ public class MyArrays {
 
         }
 
-        double min = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] < min)
-                min = array[i];
-        }
+        double min = getMin(array);
         System.out.println("Минимальное значение в массиве равно " + min);
+        double max = getMax(array);
+        System.out.println("Максимальное значение в массиве равно " + max);
+        double res = getAvg(size, array);
+        System.out.println("Среднее арифметическое значение равно " + res);
+    }
 
+    private static double getMax(double[] array) {
         double max = array[0];
         for (int i = 1; i < array.length; i++) {
             if (array[i] > max)
                 max = array[i];
         }
-        System.out.println("Максимальное значение в массиве равно " + max);
+        return max;
+    }
 
+    private static double getAvg(int size, double[] array) {
 
         double sum = 0;
         for (double v : array) {
             sum += v;
         }
         double res = sum / size;
-        System.out.println("Среднее арифметическое значение равно " + res);
+        return res;
+    }
+
+    private static double getMin(double[] array) {
+        double min = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < min)
+                min = array[i];
+        }
+        return min;
     }
 }
