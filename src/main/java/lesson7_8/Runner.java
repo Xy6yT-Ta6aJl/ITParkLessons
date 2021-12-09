@@ -34,8 +34,8 @@ public class Runner {
         polosatiy.setVoice("Р-р-р-р-р-р");
         potapich.setVoice("Привет брат, медку бы.");
 
-        Animals[] animals = new Animals[]{pecheneg, markiz, polosatiy, potapich};
-        for (Animals anim:animals) {
+        Animal[] animals = new Animal[]{pecheneg, markiz, polosatiy, potapich};
+        for (Animal anim:animals) {
             anim.speak(anim.voice);
         }
     }

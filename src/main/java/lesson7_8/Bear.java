@@ -1,6 +1,6 @@
 package lesson7_8;
 
-public class Bear extends Animals{
+public class Bear extends Animal {
 
     @Override
     public void run(int runDistance) {

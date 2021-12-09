@@ -1,6 +1,6 @@
 package lesson7_8;
 
-public class Animals {
+public class Animal {
     int runDistance, swimDistance;
     String voice;
 
