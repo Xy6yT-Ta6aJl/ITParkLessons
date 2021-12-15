@@ -12,14 +12,13 @@ public class SquareRoot {
             System.out.println("Вы ввели некорректное число, перезапустите программу и попробуйте снова.");
             System.exit(0);
         }
-        for (int i = 1; i < Integer.MAX_VALUE; i++) {
+        for (int i = 1; i <= value; i++) {
             if (value / i == i) {
                 System.out.println("Квадратный корень из " + value + " равен " + i);
             } else {
-                System.out.println("У числа " + value + " нет целого квадратного корня.");
-                break;
-            }
+            System.out.println("У числа " + value + " нет целого квадратного корня.");
+            break;
         }
-
     }
 }
+    }
