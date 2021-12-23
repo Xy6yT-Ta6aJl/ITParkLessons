@@ -21,8 +21,8 @@ public class MyExceptionRunner {
     public static void stringToInt(String[][] stringArray) throws MyArraySizeException, MyArrayDataException {
         int[][] intArray = new int[4][4];
         int sum = 0;
-        if (stringArray.length > 4 || stringArray[0].length > 4 ||
-                stringArray[1].length > 4 || stringArray[2].length > 4 || stringArray[3].length > 4) {
+        if (stringArray.length != 4 || stringArray[0].length != 4 ||
+                stringArray[1].length != 4 || stringArray[2].length != 4 || stringArray[3].length > 4) {
             throw new MyArraySizeException("Неверный размер массива.");
         }
         for (int i = 0; i < intArray.length; i++) {
