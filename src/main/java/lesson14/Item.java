@@ -1,9 +1,23 @@
 package lesson14;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Setter
+@Getter
 public class Item {
+
+    private String number;
+    private String firstName;
+    private String secondName;
+    private String thirdName;
+
+    public Item() {
+    }
+
     public Item(String number, String firstName, String secondName, String thirdName) {
         this.number = number;
         this.firstName = firstName;
@@ -11,50 +25,15 @@ public class Item {
         this.thirdName = thirdName;
     }
 
-    public Item() {
+    private List<String> listOfNumbers = new ArrayList<>();
 
-    }
-
-    private String number;
-    private String firstName;
-    private String secondName;
-
-    public List<String> getListOfNumbers() {
-        return listOfNumbers;
-    }
-
-    public void setListOfNumbers(List<String> listOfNumbers) {
-        this.listOfNumbers = listOfNumbers;
-    }
-
-    public void  addNumberToListOfNumbers(String number){
-        if (listOfNumbers==null){
+    public void addNumberToListOfNumbers(String number) {
+        if (listOfNumbers == null) {
             listOfNumbers = new ArrayList<String>();
         }
         listOfNumbers.add(number);
     }
 
-    private List<String> listOfNumbers = new ArrayList<>();
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getSecondName() {
-        return secondName;
-    }
 
     @Override
     public String toString() {
@@ -66,19 +45,5 @@ public class Item {
                 ", thirdName='" + thirdName + '\'' +
                 '}';
     }
-
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
-    }
-
-    public String getThirdName() {
-        return thirdName;
-    }
-
-    public void setThirdName(String thirdName) {
-        this.thirdName = thirdName;
-    }
-
-    private String thirdName;
 
 }

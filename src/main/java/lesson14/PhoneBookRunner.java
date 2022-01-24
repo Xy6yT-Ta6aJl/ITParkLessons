@@ -19,7 +19,6 @@ public class PhoneBookRunner {
 
         for (int i = 0; i < 1000; i++) {
             Item item = phoneBook.get(i);
-          //  System.out.println(item.getNumber());
             for (int j = 0; j < new Random().nextInt(10); j++) {
                 item.addNumberToListOfNumbers(phoneBook.get(new Random().nextInt(1000)).getNumber());
             }
